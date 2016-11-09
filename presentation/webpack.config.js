@@ -54,7 +54,7 @@ module.exports = {
   devServer: {
     port: 3030,
     proxy: { // proxy requests over to spring boot
-      '/*': {
+      '/': {
         target: 'http://localhost:4040',
         secure: false,
         prependPath: false
